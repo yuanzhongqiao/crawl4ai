@@ -97,16 +97,7 @@
 <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>git clone https://github.com/unclecode/crawl4ai.git
 <span class="pl-c1">cd</span> crawl4ai
 pip install -e <span class="pl-c1">.</span></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone https://github.com/unclecode/crawl4ai.git
-cd crawl4ai
-pip install -e ." tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+  
   </div></div>
 <div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Docker</font></font></h3><a id="user-content-using-docker-" class="anchor" aria-label="永久链接：使用 Docker 🐳" href="#using-docker-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们正在创建 Docker 镜像并将其推送到 Docker Hub。这将提供一种在容器化环境中运行 Crawl4AI 的简便方法。敬请期待更新！</font></font></p>
@@ -122,23 +113,7 @@ pip install -e ." tabindex="0" role="button">
 
 <span class="pl-k">if</span> <span class="pl-s1">__name__</span> <span class="pl-c1">==</span> <span class="pl-s">"__main__"</span>:
     <span class="pl-s1">asyncio</span>.<span class="pl-en">run</span>(<span class="pl-en">main</span>())</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="import asyncio
-from crawl4ai import AsyncWebCrawler
-
-async def main():
-    async with AsyncWebCrawler(verbose=True) as crawler:
-        result = await crawler.arun(url=&quot;https://www.nbcnews.com/business&quot;)
-        print(result.markdown)
-
-if __name__ == &quot;__main__&quot;:
-    asyncio.run(main())" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+ 
   </div></div>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高级用法🔬</font></font></h2><a id="user-content-advanced-usage-" class="anchor" aria-label="固定链接：高级用法 🔬" href="#advanced-usage-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执行 JavaScript 并使用 CSS 选择器</font></font></h3><a id="user-content-executing-javascript-and-using-css-selectors" class="anchor" aria-label="永久链接：执行 JavaScript 并使用 CSS 选择器" href="#executing-javascript-and-using-css-selectors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
@@ -158,29 +133,7 @@ if __name__ == &quot;__main__&quot;:
 
 <span class="pl-k">if</span> <span class="pl-s1">__name__</span> <span class="pl-c1">==</span> <span class="pl-s">"__main__"</span>:
     <span class="pl-s1">asyncio</span>.<span class="pl-en">run</span>(<span class="pl-en">main</span>())</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="import asyncio
-from crawl4ai import AsyncWebCrawler
-
-async def main():
-    async with AsyncWebCrawler(verbose=True) as crawler:
-        js_code = [&quot;const loadMoreButton = Array.from(document.querySelectorAll('button')).find(button => button.textContent.includes('Load More')); loadMoreButton &amp;&amp; loadMoreButton.click();&quot;]
-        result = await crawler.arun(
-            url=&quot;https://www.nbcnews.com/business&quot;,
-            js_code=js_code,
-            css_selector=&quot;article.tease-card&quot;,
-            bypass_cache=True
-        )
-        print(result.extracted_content)
-
-if __name__ == &quot;__main__&quot;:
-    asyncio.run(main())" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 <div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用代理</font></font></h3><a id="user-content-using-a-proxy" class="anchor" aria-label="永久链接：使用代理" href="#using-a-proxy"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <div class="highlight highlight-source-python notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">import</span> <span class="pl-s1">asyncio</span>
@@ -196,26 +149,7 @@ if __name__ == &quot;__main__&quot;:
 
 <span class="pl-k">if</span> <span class="pl-s1">__name__</span> <span class="pl-c1">==</span> <span class="pl-s">"__main__"</span>:
     <span class="pl-s1">asyncio</span>.<span class="pl-en">run</span>(<span class="pl-en">main</span>())</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="import asyncio
-from crawl4ai import AsyncWebCrawler
-
-async def main():
-    async with AsyncWebCrawler(verbose=True, proxy=&quot;http://127.0.0.1:7890&quot;) as crawler:
-        result = await crawler.arun(
-            url=&quot;https://www.nbcnews.com/business&quot;,
-            bypass_cache=True
-        )
-        print(result.markdown)
-
-if __name__ == &quot;__main__&quot;:
-    asyncio.run(main())" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+   
   </div></div>
 <div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无需 LLM 即可提取结构化数据</font></font></h3><a id="user-content-extracting-structured-data-without-llm" class="anchor" aria-label="永久链接：无需 LLM 即可提取结构化数据" href="#extracting-structured-data-without-llm"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">允许</font></font><code>JsonCssExtractionStrategy</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 CSS 选择器从网页中精确提取结构化数据。</font></font></p>
@@ -284,78 +218,7 @@ if __name__ == &quot;__main__&quot;:
 
 <span class="pl-k">if</span> <span class="pl-s1">__name__</span> <span class="pl-c1">==</span> <span class="pl-s">"__main__"</span>:
     <span class="pl-s1">asyncio</span>.<span class="pl-en">run</span>(<span class="pl-en">extract_news_teasers</span>())</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="import asyncio
-import json
-from crawl4ai import AsyncWebCrawler
-from crawl4ai.extraction_strategy import JsonCssExtractionStrategy
-
-async def extract_news_teasers():
-    schema = {
-        &quot;name&quot;: &quot;News Teaser Extractor&quot;,
-        &quot;baseSelector&quot;: &quot;.wide-tease-item__wrapper&quot;,
-        &quot;fields&quot;: [
-            {
-                &quot;name&quot;: &quot;category&quot;,
-                &quot;selector&quot;: &quot;.unibrow span[data-testid='unibrow-text']&quot;,
-                &quot;type&quot;: &quot;text&quot;,
-            },
-            {
-                &quot;name&quot;: &quot;headline&quot;,
-                &quot;selector&quot;: &quot;.wide-tease-item__headline&quot;,
-                &quot;type&quot;: &quot;text&quot;,
-            },
-            {
-                &quot;name&quot;: &quot;summary&quot;,
-                &quot;selector&quot;: &quot;.wide-tease-item__description&quot;,
-                &quot;type&quot;: &quot;text&quot;,
-            },
-            {
-                &quot;name&quot;: &quot;time&quot;,
-                &quot;selector&quot;: &quot;[data-testid='wide-tease-date']&quot;,
-                &quot;type&quot;: &quot;text&quot;,
-            },
-            {
-                &quot;name&quot;: &quot;image&quot;,
-                &quot;type&quot;: &quot;nested&quot;,
-                &quot;selector&quot;: &quot;picture.teasePicture img&quot;,
-                &quot;fields&quot;: [
-                    {&quot;name&quot;: &quot;src&quot;, &quot;type&quot;: &quot;attribute&quot;, &quot;attribute&quot;: &quot;src&quot;},
-                    {&quot;name&quot;: &quot;alt&quot;, &quot;type&quot;: &quot;attribute&quot;, &quot;attribute&quot;: &quot;alt&quot;},
-                ],
-            },
-            {
-                &quot;name&quot;: &quot;link&quot;,
-                &quot;selector&quot;: &quot;a[href]&quot;,
-                &quot;type&quot;: &quot;attribute&quot;,
-                &quot;attribute&quot;: &quot;href&quot;,
-            },
-        ],
-    }
-
-    extraction_strategy = JsonCssExtractionStrategy(schema, verbose=True)
-
-    async with AsyncWebCrawler(verbose=True) as crawler:
-        result = await crawler.arun(
-            url=&quot;https://www.nbcnews.com/business&quot;,
-            extraction_strategy=extraction_strategy,
-            bypass_cache=True,
-        )
-
-        assert result.success, &quot;Failed to crawl the page&quot;
-
-        news_teasers = json.loads(result.extracted_content)
-        print(f&quot;Successfully extracted {len(news_teasers)} news teasers&quot;)
-        print(json.dumps(news_teasers[0], indent=2))
-
-if __name__ == &quot;__main__&quot;:
-    asyncio.run(extract_news_teasers())" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+  
   </div></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关更多高级用法示例，请查看</font><font style="vertical-align: inherit;">文档中的</font></font><a href="https://crawl4ai.com/mkdocs/full_details/advanced_jsoncss_extraction.md" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">示例部分。</font></font></a><font style="vertical-align: inherit;"></font></p>
 <div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OpenAI 提取结构化数据</font></font></h3><a id="user-content-extracting-structured-data-with-openai" class="anchor" aria-label="永久链接：使用 OpenAI 提取结构化数据" href="#extracting-structured-data-with-openai"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
@@ -389,43 +252,7 @@ if __name__ == &quot;__main__&quot;:
 
 <span class="pl-k">if</span> <span class="pl-s1">__name__</span> <span class="pl-c1">==</span> <span class="pl-s">"__main__"</span>:
     <span class="pl-s1">asyncio</span>.<span class="pl-en">run</span>(<span class="pl-en">main</span>())</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="import os
-import asyncio
-from crawl4ai import AsyncWebCrawler
-from crawl4ai.extraction_strategy import LLMExtractionStrategy
-from pydantic import BaseModel, Field
-
-class OpenAIModelFee(BaseModel):
-    model_name: str = Field(..., description=&quot;Name of the OpenAI model.&quot;)
-    input_fee: str = Field(..., description=&quot;Fee for input token for the OpenAI model.&quot;)
-    output_fee: str = Field(..., description=&quot;Fee for output token for the OpenAI model.&quot;)
-
-async def main():
-    async with AsyncWebCrawler(verbose=True) as crawler:
-        result = await crawler.arun(
-            url='https://openai.com/api/pricing/',
-            word_count_threshold=1,
-            extraction_strategy=LLMExtractionStrategy(
-                provider=&quot;openai/gpt-4o&quot;, api_token=os.getenv('OPENAI_API_KEY'), 
-                schema=OpenAIModelFee.schema(),
-                extraction_type=&quot;schema&quot;,
-                instruction=&quot;&quot;&quot;From the crawled content, extract all mentioned model names along with their fees for input and output tokens. 
-                Do not miss any models in the entire content. One extracted model JSON format should look like this: 
-                {&quot;model_name&quot;: &quot;GPT-4&quot;, &quot;input_fee&quot;: &quot;US$10.00 / 1M tokens&quot;, &quot;output_fee&quot;: &quot;US$30.00 / 1M tokens&quot;}.&quot;&quot;&quot;
-            ),            
-            bypass_cache=True,
-        )
-        print(result.extracted_content)
-
-if __name__ == &quot;__main__&quot;:
-    asyncio.run(main())" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 <div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会话管理和动态内容抓取</font></font></h3><a id="user-content-session-management-and-dynamic-content-crawling" class="anchor" aria-label="永久链接：会话管理和动态内容抓取" href="#session-management-and-dynamic-content-crawling"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crawl4AI 擅长处理复杂场景，例如抓取通过 JavaScript 加载的动态内容的多个页面。以下是抓取跨多个页面的 GitHub 提交的示例：</font></font></p>
@@ -486,70 +313,7 @@ if __name__ == &quot;__main__&quot;:
 
 <span class="pl-k">if</span> <span class="pl-s1">__name__</span> <span class="pl-c1">==</span> <span class="pl-s">"__main__"</span>:
     <span class="pl-s1">asyncio</span>.<span class="pl-en">run</span>(<span class="pl-en">crawl_typescript_commits</span>())</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="import asyncio
-import re
-from bs4 import BeautifulSoup
-from crawl4ai import AsyncWebCrawler
-
-async def crawl_typescript_commits():
-    first_commit = &quot;&quot;
-    async def on_execution_started(page):
-        nonlocal first_commit 
-        try:
-            while True:
-                await page.wait_for_selector('li.Box-sc-g0xbh4-0 h4')
-                commit = await page.query_selector('li.Box-sc-g0xbh4-0 h4')
-                commit = await commit.evaluate('(element) => element.textContent')
-                commit = re.sub(r'\s+', '', commit)
-                if commit and commit != first_commit:
-                    first_commit = commit
-                    break
-                await asyncio.sleep(0.5)
-        except Exception as e:
-            print(f&quot;Warning: New content didn't appear after JavaScript execution: {e}&quot;)
-
-    async with AsyncWebCrawler(verbose=True) as crawler:
-        crawler.crawler_strategy.set_hook('on_execution_started', on_execution_started)
-
-        url = &quot;https://github.com/microsoft/TypeScript/commits/main&quot;
-        session_id = &quot;typescript_commits_session&quot;
-        all_commits = []
-
-        js_next_page = &quot;&quot;&quot;
-        const button = document.querySelector('a[data-testid=&quot;pagination-next-button&quot;]');
-        if (button) button.click();
-        &quot;&quot;&quot;
-
-        for page in range(3):  # Crawl 3 pages
-            result = await crawler.arun(
-                url=url,
-                session_id=session_id,
-                css_selector=&quot;li.Box-sc-g0xbh4-0&quot;,
-                js=js_next_page if page > 0 else None,
-                bypass_cache=True,
-                js_only=page > 0
-            )
-
-            assert result.success, f&quot;Failed to crawl page {page + 1}&quot;
-
-            soup = BeautifulSoup(result.cleaned_html, 'html.parser')
-            commits = soup.select(&quot;li&quot;)
-            all_commits.extend(commits)
-
-            print(f&quot;Page {page + 1}: Found {len(commits)} commits&quot;)
-
-        await crawler.crawler_strategy.kill_session(session_id)
-        print(f&quot;Successfully crawled {len(all_commits)} commits across 3 pages&quot;)
-
-if __name__ == &quot;__main__&quot;:
-    asyncio.run(crawl_typescript_commits())" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此示例展示了 Crawl4AI 处理异步加载内容的复杂场景的能力。它会抓取多个 GitHub 提交页面，执行 JavaScript 以加载新内容，并使用自定义钩子确保在继续操作之前已加载数据。</font></font></p>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关更多高级用法示例，请查看</font><font style="vertical-align: inherit;">文档中的</font></font><a href="https://crawl4ai.com/mkdocs/full_details/session_based_crawling.md" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">示例部分。</font></font></a><font style="vertical-align: inherit;"></font></p>
